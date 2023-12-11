@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Kalnia", serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+}
+.overall-header,
+main {
+  padding: 20px;
+}
+.overall-header {
+  text-align: center;
+  background-color: salmon;
+  padding: 50px;
+}
