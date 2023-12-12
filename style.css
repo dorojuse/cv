@@ -39,3 +39,10 @@ a:active {
 article + article {
   border-top: dotted salmon;
 }
+::selection {
+  background-color: darkgrey;
+  color: white;
+}
+.profession::after {
+  content: " 🤓";
+}
