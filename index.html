@@ -7,6 +7,7 @@
     <meta name="description" content="html practice">
     <meta name="author" content="Dorothea Seitz">
     <title>My CV</title>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,20 +23,20 @@
         <h1>CV Dorothea Seitz</h1>
         <p class="profession">frontend developer</p>
         <nav>
-            <a href="#Profile">Profile</a>
-            <a href="#Experiences">Experiences</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Contact">Contact</a>
+            <a class="nav" href="#Profile">Profile</a>
+            <a class="nav" href="#Experiences">Experiences</a>
+            <a class="nav" href="#Skills">Skills</a>
+            <a class="nav" href="#Contact">Contact</a>
         </nav>
     </header>
     <main>
-        <article id="Profile">
+        <article class="article" id="Profile">
             <h2>Profile</h2>
             <p>I am a <strong>junior frontend developer</strong> with a background in political science, education and
                 coaching.</p>
             <p>I am especially interested in <i>EdTech</i> and the non-profit sector.</p>
         </article>
-        <article id="Experiences">
+        <article class="article" id="Experiences">
             <h2>Experiences</h2>
             <section>
                 <header>
@@ -67,7 +68,7 @@
                 </header>
             </section>
         </article>
-        <article id="Skills">
+        <article class="article" id="Skills">
             <h2>Skills</h2>
             <section>
                 <h3>Technical Skills</h3>
@@ -88,7 +89,7 @@
                 </ul>
             </section>
         </article>
-        <article id="Contact">
+        <article class="article" id="Contact">
             <h2>Contact</h2>
             <ol type="a">
                 <li>Email</li>

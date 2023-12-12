@@ -1,48 +1,49 @@
 * {
   box-sizing: border-box;
 }
-body {
+html {
   margin: 0;
   font-family: "Kalnia", serif;
+  padding: 20px;
 }
 h1,
 h2,
 h3 {
   font-family: "Merriweather", serif;
 }
-.overall-header,
-main {
-  padding: 20px;
-}
+
 .overall-header {
   text-align: center;
   background-color: salmon;
   padding: 50px;
 }
-article {
-  margin: 80px;
-}
 
-a {
-  margin: 16px;
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: grey;
-}
-
-a:active {
-  color: hotpink;
-}
-article + article {
-  border-top: dotted salmon;
-}
 ::selection {
   background-color: darkgrey;
   color: white;
 }
 .profession::after {
   content: " 🤓";
+}
+
+.nav {
+  margin: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav:hover {
+  color: grey;
+}
+
+.nav:active {
+  color: hotpink;
+}
+
+.article {
+  margin: 80px;
+}
+
+.article + .article {
+  border-top: dotted salmon;
 }
