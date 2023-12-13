@@ -4,7 +4,7 @@
 html {
   margin: 0;
   font-family: "Kalnia", serif;
-  padding: 20px;
+  font-size: 10px;
 }
 h1,
 h2,
@@ -12,11 +12,17 @@ h3 {
   font-family: "Merriweather", serif;
 }
 
+main {
+  max-width: 120ch;
+  padding: 2rem;
+}
+
 .overall-header {
   text-align: center;
   background-color: salmon;
-  padding: 50px;
+  padding: 5rem;
   position: relative;
+  font-size: 1.5rem;
 }
 
 ::selection {
@@ -27,8 +33,15 @@ h3 {
   content: " 🤓";
 }
 
+.profession {
+  font-size: 0.25em;
+}
+
+h1 {
+  font-size: 1em;
+}
 .nav {
-  margin: 16px;
+  margin: 1.5rem;
   color: white;
   text-decoration: none;
 }
@@ -42,9 +55,10 @@ h3 {
 }
 
 .article {
-  margin: 50px;
-  padding: 36px;
+  margin: 5rem;
+  padding: 4rem;
   border-top: dotted salmon;
+  font-size: 1.5rem;
 }
 
 article:nth-child(1) {
@@ -57,13 +71,17 @@ article:nth-child(1) {
 
 h2 {
   position: relative;
-  left: -30px;
+  left: -3rem;
 }
 .badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem;
   color: white;
   background-color: black;
+}
+
+.enclosing {
+  font-size: 6rem;
 }
