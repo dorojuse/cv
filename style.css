@@ -4,7 +4,6 @@
 html {
   margin: 0;
   font-family: "Kalnia", serif;
-  font-size: 10px;
 }
 h1,
 h2,
@@ -13,14 +12,14 @@ h3 {
 }
 
 main {
-  max-width: 120ch;
+  max-width: 75ch;
   padding: 2rem;
 }
 
 .overall-header {
   text-align: center;
   background-color: salmon;
-  padding: 5rem;
+  padding: 4rem;
   position: relative;
   font-size: 1.5rem;
 }
@@ -41,7 +40,7 @@ h1 {
   font-size: 1em;
 }
 .nav {
-  margin: 1.5rem;
+  margin: 1rem;
   color: white;
   text-decoration: none;
 }
@@ -55,13 +54,13 @@ h1 {
 }
 
 .article {
-  margin: 5rem;
-  padding: 4rem;
+  margin: 1rem;
+  padding: 2rem;
   border-top: dotted salmon;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-article:nth-child(1) {
+.article:nth-child(1) {
   border-top: none;
 }
 
@@ -71,17 +70,46 @@ article:nth-child(1) {
 
 h2 {
   position: relative;
-  left: -3rem;
+  left: -2rem;
 }
 .badge {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
-  padding: 1rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
   color: white;
   background-color: black;
+  font-size: 1rem;
 }
 
 .enclosing {
-  font-size: 6rem;
+  font-size: 3rem;
+}
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 18px;
+  }
+  .article {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+  .badge {
+    position: fixed;
+  }
+  .article {
+    margin-bottom: 60px;
+  }
+}
+@media print {
+  .badge {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
 }
