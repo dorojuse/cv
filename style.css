@@ -18,6 +18,7 @@ main {
 
 .overall-header {
   text-align: center;
+  background-image: linear-gradient(90deg, salmon, #faebd7);
   background-color: salmon;
   padding: 4rem;
   position: relative;
@@ -91,6 +92,16 @@ h2 {
 .heading-container {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  position: sticky;
+  bottom: 0rem;
+  background-image: linear-gradient(270deg, salmon, #faebd7);
+  background-color: salmon;
 }
 
 @media screen and (min-width: 786px) {
