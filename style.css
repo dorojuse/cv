@@ -4,6 +4,12 @@
 html {
   margin: 0;
   font-family: "Kalnia", serif;
+  --page-background-color: white;
+  --page-text-color: black;
+  --main-color: salmon;
+  --nav-color: white;
+  --hover-color: grey;
+  --gradient-color: #faebd7;
 }
 h1,
 h2,
@@ -18,16 +24,20 @@ main {
 
 .overall-header {
   text-align: center;
-  background-image: linear-gradient(90deg, salmon, #faebd7);
-  background-color: salmon;
+  background-image: linear-gradient(
+    90deg,
+    var(--main-color),
+    var(--gradient-color)
+  );
+  background-color: var(--main-color);
   padding: 4rem;
   position: relative;
   font-size: 1.5rem;
 }
 
 ::selection {
-  background-color: darkgrey;
-  color: white;
+  background-color: var(--hover-color);
+  color: var(--nav-color);
 }
 .profession::after {
   content: " 🤓";
@@ -42,24 +52,24 @@ h1 {
 }
 .nav {
   margin: 1rem;
-  color: white;
+  color: var(--nav-color);
   text-decoration: none;
   display: flex;
   justify-content: center;
 }
 
 .nav:hover {
-  color: grey;
+  color: var(--hover-color);
 }
 
 .nav:active {
-  color: hotpink;
+  color: var(--main-color);
 }
 
 .article {
   margin: 1rem;
   padding: 2rem;
-  border-top: dotted salmon;
+  border-top: dotted var(--main-color);
   font-size: 1rem;
 }
 
@@ -80,7 +90,7 @@ h2 {
   top: 0.5rem;
   right: 0.5rem;
   padding: 0.5rem;
-  color: white;
+  color: var(--nav-color);
   background-color: black;
   font-size: 1rem;
 }
@@ -100,8 +110,12 @@ footer {
   padding: 0.5rem;
   position: sticky;
   bottom: 0rem;
-  background-image: linear-gradient(270deg, salmon, #faebd7);
-  background-color: salmon;
+  background-image: linear-gradient(
+    270deg,
+    var(--main-color),
+    var(--gradient-color)
+  );
+  background-color: var(--main-color);
 }
 
 @media screen and (min-width: 786px) {
@@ -137,5 +151,12 @@ footer {
   }
   .nav {
     display: none;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --page-background-color: black;
+    --page-text-color: white;
   }
 }
