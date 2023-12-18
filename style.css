@@ -43,6 +43,8 @@ h1 {
   margin: 1rem;
   color: white;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
 .nav:hover {
@@ -85,12 +87,25 @@ h2 {
 .enclosing {
   font-size: 3rem;
 }
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 786px) {
   html {
     font-size: 18px;
   }
   .article {
     margin-bottom: 40px;
+  }
+  .nav {
+    display: inline-flex;
+  }
+  .heading-container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
